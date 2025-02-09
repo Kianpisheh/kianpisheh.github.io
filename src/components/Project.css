@@ -1,0 +1,64 @@
+.project-container {
+    width: 790px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.proj-header {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    background-color: #1f1e1e;
+    height: 170px;
+    color: rgb(255, 255, 255);
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.proj-title-container {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.proj-title-container p {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+.proj-header-description {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.proj-image {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+#paper-link-container {
+    padding-top: 3px;
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+
+#pdf-logo {
+    width: 17px;
+    height: auto;
+}
+
+#paper-link-text {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 300;
+}

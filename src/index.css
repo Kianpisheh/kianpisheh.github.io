@@ -1,0 +1,20 @@
+html {
+    background-color: #f2f2f2;
+    font-family: "Nunito", sans-serif;
+    margin: 0px;
+}
+
+body {
+    margin: 0px;
+}
+
+.proj-title {
+    font-weight: 300;
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+
+.proj-header-description {
+    font-weight: 300;
+    font-size: 18px;
+}
