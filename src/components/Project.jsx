@@ -16,8 +16,15 @@ function Project(props) {
                     </div>
                     <p className="proj-header-description">{description}</p>
                     <div id="paper-link-container">
-                        <img id="pdf-logo" src={pdfLogo}></img>
-                        <p id="paper-link-text">Paper</p>
+                        <a href={paper_link}>
+                            <img id="pdf-logo" src={pdfLogo}></img>
+                        </a>
+                        <a href={paper_link}>
+                            <p className="paper-link-text">Paper</p>{" "}
+                        </a>
+                        {paper_link === "under_review" && (
+                            <p className="paper-link-text">(under review)</p>
+                        )}
                     </div>
                 </div>
                 <div className="proj-preview">

@@ -22,6 +22,11 @@
     padding-top: 15px;
 }
 
+.proj-header a {
+    color: white;
+    text-decoration: none;
+}
+
 .proj-title-container {
     display: flex;
     align-items: center;
@@ -50,6 +55,7 @@
     display: flex;
     gap: 5px;
     cursor: pointer;
+    display: flex;
 }
 
 #pdf-logo {
@@ -57,8 +63,13 @@
     height: auto;
 }
 
-#paper-link-text {
+.paper-link-text {
     margin-top: 0px;
     margin-bottom: 0px;
     font-weight: 300;
+}
+
+.paper-link-container a {
+    display: flex;
+    flex-direction: row;
 }

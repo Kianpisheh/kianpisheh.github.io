@@ -89,6 +89,11 @@
     color: inherit;
 }
 
+.about-emph:hover {
+    color: #ff3e3e;
+    text-decoration: underline solid 1px #ff3e3e;
+}
+
 .contact-icons-container {
     display: flex;
     gap: 25px;

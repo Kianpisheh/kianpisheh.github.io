@@ -6,6 +6,9 @@ import exHAR from "./assets/exHAR.svg";
 import FaceRec from "./assets/FaceRec.svg";
 import VidRet from "./assets/VidRet.svg";
 import nameLogo from "./assets/Name.svg";
+import linkedin from "./assets/linkedin.svg";
+import scholar from "./assets/scholar.svg";
+import CV from "./assets/CV.svg";
 
 import profile_pic from "./assets/profile.png";
 
@@ -15,8 +18,8 @@ function App() {
         {
             title: "SAHARA",
             description:
-                "Self-supervised Approach for Human Activity Recognition based on Everyday Audio Events",
-            paper_link: "",
+                "Self-supevised Human Activity Recognition System based on Everyday Audio Events",
+            paper_link: "under_review",
         },
         {
             title: "exHAR",
@@ -34,7 +37,7 @@ function App() {
             title: "CONTENT-BASED VIDEO RETRIEVAL",
             description:
                 "Content-based Video Retrieval in Traffic Videos using Latent Dirichlet Allocation Topic Model",
-            paper_link: "https://dl.acm.org/doi/abs/10.1145/3351248",
+            paper_link: "https://arxiv.org/abs/2502.05457",
         },
     ];
 
@@ -87,18 +90,25 @@ function App() {
                     <div className="about-profile-image">
                         <img id="profile-pic" src={profile_pic}></img>
                         <div className="contact-icons-container">
-                            <img
-                                className="contact-icon"
-                                src="src/assets/linkedin.svg"
-                            ></img>
-                            <img
-                                className="contact-icon"
-                                src="src/assets/CV.svg"
-                            ></img>
-                            <img
-                                className="contact-icon"
-                                src="src/assets/scholar.svg"
-                            ></img>
+                            <a href="https://www.linkedin.com/in/kian-kianpisheh-0646b283/">
+                                <img
+                                    className="contact-icon"
+                                    src={linkedin}
+                                ></img>
+                            </a>
+                            <a
+                                href="./CV.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img className="contact-icon" src={CV}></img>
+                            </a>
+                            <a href="https://scholar.google.ca/citations?user=H0dqYeEAAAAJ&hl=en">
+                                <img
+                                    className="contact-icon"
+                                    src={scholar}
+                                ></img>
+                            </a>
                         </div>
                     </div>
                 </div>
