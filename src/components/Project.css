@@ -3,6 +3,7 @@
     border: 1px solid transparent;
     border-radius: 3px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .projects {
@@ -50,23 +51,9 @@
     cursor: pointer;
 }
 
-#paper-link-container {
-    padding-top: 3px;
-    display: flex;
-    gap: 5px;
-    cursor: pointer;
-    display: flex;
-}
-
 #pdf-logo {
     width: 17px;
     height: auto;
-}
-
-.paper-link-text {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-weight: 300;
 }
 
 .paper-link-container a {

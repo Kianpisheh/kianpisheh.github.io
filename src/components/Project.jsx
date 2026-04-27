@@ -1,12 +1,18 @@
 import "./Project.css";
 import pdfLogo from "../assets/pdf-logo.svg";
+import { useNavigate } from "react-router-dom";
 
 function Project(props) {
-    const { title, description, paper_link } = props.data;
+    const navigate = useNavigate();
+
+    const { title, description, paper_link, id, image } = props.data;
 
     return (
         <div>
-            <div className="project-container">
+            <div
+                className="project-container"
+                onClick={() => navigate(`/project/${id}`)}
+            >
                 <div className="proj-header">
                     <div className="proj-title-container">
                         <svg width={9} height={22}>
@@ -15,17 +21,6 @@ function Project(props) {
                         <p className="proj-title">{title}</p>
                     </div>
                     <p className="proj-header-description">{description}</p>
-                    <div id="paper-link-container">
-                        <a href={paper_link}>
-                            <img id="pdf-logo" src={pdfLogo}></img>
-                        </a>
-                        <a href={paper_link}>
-                            <p className="paper-link-text">Paper</p>{" "}
-                        </a>
-                        {paper_link === "under_review" && (
-                            <p className="paper-link-text">(under review)</p>
-                        )}
-                    </div>
                 </div>
                 <div className="proj-preview">
                     <img
